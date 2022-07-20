@@ -15,11 +15,11 @@ import './App.css';
 function App() {
   return (
       <div className="App">
-        <img src={Image} alt="Cristina Zhang" />
+        {/* <img src={Image} alt="Cristina Zhang" /> */}
         <Router>
         <Navbar />
           <Routes>
-            <Route path="/" element={<About />}>
+            <Route path="/" exact element={<About />}>
               <Route path="projects" element={<Projects />} />
               <Route path="contact" element={<Contact />} />
             </Route>
