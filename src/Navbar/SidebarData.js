@@ -2,6 +2,7 @@ import React from 'react';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import * as GrIcons from 'react-icons/gr';
 
 export const SidebarData = [
     {
@@ -13,8 +14,8 @@ export const SidebarData = [
     {
         title: 'Projects',
         path: '/projects',
-        icon: <AiIcons.AiFillHome />,
-        className: 'nav-text'
+        icon: <GrIcons.GrProjects />,
+        className: 'nav-text project',
     },
     {
         title: 'Resume',
