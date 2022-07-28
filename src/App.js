@@ -2,12 +2,11 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
+  Routes
 } from "react-router-dom";
-import Image from './Images/Cristina.jpg'
 import About from './Portfolio/About';
-// import Resume from './Portfolio/Resume';
 import Projects from './Portfolio/Projects';
+import Resume from './Portfolio/Resume';
 import Contact from './Portfolio/Contact';
 import Navbar from './Navbar/Navbar';
 import './App.css';
@@ -15,14 +14,14 @@ import './App.css';
 function App() {
   return (
       <div className="App">
-        {/* <img src={Image} alt="Cristina Zhang" /> */}
         <Router>
+          <Projects />
         <Navbar />
           <Routes>
-            <Route path="/" exact element={<About />}>
-              <Route path="projects" element={<Projects />} />
-              <Route path="contact" element={<Contact />} />
-            </Route>
+            <Route exact path="/" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Router>
       </div>
