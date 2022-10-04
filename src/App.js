@@ -15,7 +15,6 @@ function App() {
   return (
       <div className="App">
         <Router>
-          <Projects />
         <Navbar />
           <Routes>
             <Route exact path="/" element={<About />} />
